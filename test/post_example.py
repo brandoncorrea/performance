@@ -3,7 +3,7 @@ import requests
 from data import randomdata
 from core import threadexecutor
 
-random_data = randomdata()
+random_data = randomdata.RandomData()
 
 
 def post_request():

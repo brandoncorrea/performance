@@ -18,13 +18,13 @@ class RandomData:
         return ''.join(random.choice(self.chars) for _ in range(length))
 
     def email_provider(self):
-        random.choice(self.email_providers)
+        return random.choice(self.email_providers)
 
     def name(self):
-        random.choice(self.names)
+        return random.choice(self.names)
 
     @staticmethod
     def phone_number():
-        str(random.randint(1000000000, 9999999999))
+        return str(random.randint(1000000000, 9999999999))
 
 

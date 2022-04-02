@@ -1,6 +1,6 @@
 import random
 import os
-import Data
+import jsondata
 
 
 class RandomData:
@@ -10,9 +10,9 @@ class RandomData:
 
     def __init__(self):
         random.seed = os.urandom(1024)
-        self.chars = Data.characters()
-        self.email_providers = Data.email_providers()
-        self.names = Data.names()
+        self.chars = jsondata.characters()
+        self.email_providers = jsondata.email_providers()
+        self.names = jsondata.names()
 
     def characters(self, length):
         return ''.join(random.choice(self.chars) for _ in range(length))

@@ -1,6 +1,6 @@
 import requests
 
-from core import ThreadExecutor
+from core import threadexecutor
 
 
 def request():
@@ -8,4 +8,4 @@ def request():
 
 
 if __name__ == '__main__':
-    ThreadExecutor.spin(50, request)
+    threadexecutor.spin(50, request)

@@ -1,9 +1,9 @@
 import requests
 
-from data import RandomData
-from core import ThreadExecutor
+from data import randomdata
+from core import threadexecutor
 
-random_data = RandomData()
+random_data = randomdata()
 
 
 def post_request():
@@ -18,4 +18,4 @@ def post_request():
 
 
 if __name__ == '__main__':
-    ThreadExecutor.spin(50, post_request)
+    threadexecutor.spin(50, post_request)

@@ -7,12 +7,12 @@ def characters():
 
 
 def load_json(file_name):
-    json.loads(open(file_name).read())
+    return json.loads(open(file_name).read())
 
 
 def email_providers():
-    load_json('email_provider.json')
+    return load_json('email_provider.json')
 
 
 def names():
-    load_json('name.json')
+    return load_json('name.json')
